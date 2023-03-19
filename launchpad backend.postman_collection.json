@@ -1,0 +1,536 @@
+{
+	"info": {
+		"_postman_id": "2c4c9500-2bf6-4c28-b43f-cfe3e4685eb7",
+		"name": "launchpad backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25674492"
+	},
+	"item": [
+		{
+			"name": "Admins",
+			"item": [
+				{
+					"name": "verify",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"63f13fc3c64807c037f76847\",\n    \"verification\": \"AUDIT\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/admin/verify",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"admin",
+								"verify"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "verify",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"63de5085204c9c3049e23d50\",\n    \"verification\": \"AUDIT\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3001/admin/verify",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"admin",
+										"verify"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "32"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"20-2RqHD6kaUW9yXBkJM4BxciU8/Ik\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 16 Feb 2023 20:05:48 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"No token provided!\"\n}"
+						}
+					]
+				},
+				{
+					"name": "signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"desezo@gmail.com\",\n    \"password\": \"Desmondezo\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/admin/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"admin",
+								"signup"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "signup",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"desezo@gmail.com\",\n    \"password\": \"Desmondezo\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3001/admin/signup",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"admin",
+										"signup"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "60"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3c-ARh7vqjhk9NQCx/5NdL5H8Z5O24\""
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "bezkoder-session=eyJ0b2tlbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpwWkNJNklqWXpaV1U0WVRjeE5XTm1ZMlkyWVdFNFpHVmpaVGhsT0NJc0ltbGhkQ0k2TVRZM05qVTNOelF3TVN3aVpYaHdJam94TmpjMk5qWXpPREF4ZlEuanB3LS1mQThoQjBXRVNwRjVfVjM5RmQ3Z2hBRnJSUW9icnlxM29lbnBkbyJ9; path=/; samesite=strict; httponly"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "bezkoder-session.sig=JWPwNndFWr366z1dLVnrjAwVC64; path=/; samesite=strict; httponly"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 16 Feb 2023 19:56:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"63ee8a715cfcf6aa8dece8e8\",\n    \"email\": \"desezo@gmail.com\"\n}"
+						}
+					]
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"desezo@gmail.com\",\n    \"password\": \"Desmondezo\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/admin/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"admin",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"desezo@gmail.com\",\n    \"password\": \"Desmondezo\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3001/admin/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"admin",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "60"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3c-ARh7vqjhk9NQCx/5NdL5H8Z5O24\""
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "bezkoder-session=eyJ0b2tlbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpwWkNJNklqWXpaV1U0WVRjeE5XTm1ZMlkyWVdFNFpHVmpaVGhsT0NJc0ltbGhkQ0k2TVRZM05qVTNOemc1TlN3aVpYaHdJam94TmpjMk5qWTBNamsxZlEuT2lRYkVQRjlqVDRjWmRINVBReVRrdW1IY0FfTFNlUndXb2hEbFpmM2hBZyJ9; path=/; samesite=strict; httponly"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "bezkoder-session.sig=kZKts2_aVKtn-kFTtuEN2VFRwps; path=/; samesite=strict; httponly"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 16 Feb 2023 20:04:55 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"63ee8a715cfcf6aa8dece8e8\",\n    \"email\": \"desezo@gmail.com\"\n}"
+						}
+					]
+				},
+				{
+					"name": "signout",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"desezo@gmail.com\",\n    \"password\": \"Desmondezo\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/admin/signout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"admin",
+								"signout"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "signout",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"desezo@gmail.com\",\n    \"password\": \"Desmondezo\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3001/admin/signout",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"admin",
+										"signout"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "37"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"25-/EGPwFHK3iTuX2JtFa6HDMy6/EQ\""
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "bezkoder-session=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT; samesite=strict; httponly"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "bezkoder-session.sig=4Fhnw6vcuI2jtFi6zwropxpB-Eg; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT; samesite=strict; httponly"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 16 Feb 2023 20:05:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"You've been signed out!\"\n}"
+						}
+					]
+				},
+				{
+					"name": "cancel project",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/admin/cancel/63f45ea020845899a1635115",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"admin",
+								"cancel",
+								"63f45ea020845899a1635115"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "fetch projects",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/projects/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"projects",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"name\": \"string\",\n        \"symbol\": \"string\",\n        \"decimals\": 213,\n        \"logo\": \"string\",\n        \"presaleRate\": 23,\n        \"listingRate\": 43,\n        \"whitelist\": false,\n        \"softcap\": 23,\n        \"hardcap\": 50,\n        \"refundType\": \"string\",\n        \"minBNB\": 1,\n        \"maxBNB\": 23,\n        \"liqPercent\": 34,\n        \"liqLockTime\": 21,\n        \"website\": \"string\",\n        \"description\": \"string\",\n        \"facebook\": \"string\",\n        \"twitter\": \"string\",\n        \"github\": \"string\",\n        \"telegram\": \"string\",\n        \"instagram\": \"string\",\n        \"discord\": \"string\",\n        \"reddit\": \"string\",\n        \"startTime\": \"2023-02-04T12:34:03.246Z\",\n        \"endTime\": \"2023-02-04T12:34:03.246Z\",\n        \"address\": \"string\",\n        \"tier\": 1,\n        \"firstRelease\": 23,\n        \"cyclePeriod\": 4,\n        \"tokenPerCycle\": 6,\n        \"vestEnabled\": true,\n        \"approved\": true,\n        \"bought\": 76,\n        \"ended\": false,\n        \"participants\": 89\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/projects/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"projects",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetch one project",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:3001/projects/63feda4b51ccd7cd5911b83f",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"projects",
+						"63feda4b51ccd7cd5911b83f"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
